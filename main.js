@@ -18,7 +18,7 @@ $(() => {
         $(`#${pokemon.name}-card`).append($(`<div id="${pokemon.name}-card-body" class="card-body"/>`));
         $(`#${pokemon.name}-card-body`).append($('<h5 class="card-title" />').text(pokemon.name));
         $(`#${pokemon.name}-card`).append($(`<div id="${pokemon.name}-card-footer" class="card-footer" />`));
-        $(`#${pokemon.name}-card-footer`).append($(`<button class="btn btn-dark" id="${pokemon.name}-select" />`).text('Select'));
+        $(`#${pokemon.name}-card-footer`).append($(`<button class="btn btn-dark stretched-link" id="${pokemon.name}-select" />`).text('Select'));
 
         $(`#${pokemon.name}-select`).on('click', () => {
            selectCard(pokemon);
